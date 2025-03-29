@@ -41,7 +41,7 @@ public class ExcelController
         inventoryList = _dataBaseService.GetInventories();
         Console.WriteLine($"Geting inventory from database.\n");
 
-        Console.WriteLine("Inventory List\n\n");
+        Console.WriteLine("Inventory List\n");
         ShowInventory(inventoryList);
     }
 
