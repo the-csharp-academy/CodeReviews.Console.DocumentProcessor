@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Excel-Reader": {
+      "commandName": "Project",
+      "workingDirectory": "X:\\C#\\.NET-Console-Apps\\_C#Academy-Code-Reviews\\ExcelReader.andymartinez1\\Excel-Reader\\"
+    }
+  }
+}
