@@ -1,0 +1,10 @@
+{
+    "ConnectionStrings": {
+        "connection": "Server=DESKTOP-PLS9OA9; Database=ExcelReaderDb; Trusted_Connection=True; MultipleActiveResultSets=True; TrustServerCertificate=True;"
+    },
+    "EPPlus": {
+        "ExcelPackage": {
+            "License": "NonCommercialPersonal: Andrew"
+        }
+    }
+}
