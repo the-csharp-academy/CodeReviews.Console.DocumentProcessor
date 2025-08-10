@@ -36,12 +36,9 @@ Once both the Excel and CSV readers were working, I proceeded to implement file 
 - Learned how to use EPP and CSV reader packages and refreshed knowledge about StreamReaders and Writers
 
 ## Main resources used:
-
-[EPP package documentation](https://epplussoftware.com/) 
-
-[CSV reader documentation](https://joshclose.github.io/CsvHelper/)
-
-[Dapper documentation](https://www.learndapper.com/)
+- [EPP package documentation](https://epplussoftware.com/) 
+- [CSV reader documentation](https://joshclose.github.io/CsvHelper/)
+- [Dapper documentation](https://www.learndapper.com/)
 
 ## Packages Used
 | Package | Version |
