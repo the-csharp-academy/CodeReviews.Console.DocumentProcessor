@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DocumentProcessor.yemiodetola.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(DocumentProcessorDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

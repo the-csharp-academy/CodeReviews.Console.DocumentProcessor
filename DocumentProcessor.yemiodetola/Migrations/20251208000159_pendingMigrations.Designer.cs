@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DocumentProcessor.yemiodetola.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(DocumentProcessorDbContext))]
     [Migration("20251208000159_pendingMigrations")]
     partial class pendingMigrations
     {

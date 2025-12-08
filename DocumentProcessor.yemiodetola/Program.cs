@@ -11,13 +11,11 @@ class Program
 
     var services = new ServiceCollection();
 
-    services.AddSingleton<DocumentProcessor.yemiodetola.Services.IExcelService, DocumentProcessor.yemiodetola.Services.ExcelService>();
-    services.AddSingleton<DocumentProcessor.yemiodetola.Services.IPdfService, DocumentProcessor.yemiodetola.Services.PdfService>();
-
+    services.AddSingleton<IExcelService, ExcelService>();
+    services.AddSingleton<IPdfService, PdfService>();
     var provider = services.BuildServiceProvider();
-
-    var excelService = provider.GetRequiredService<DocumentProcessor.yemiodetola.Services.IExcelService>();
-    var pdfService = provider.GetRequiredService<DocumentProcessor.yemiodetola.Services.IPdfService>();
+    var excelService = provider.GetRequiredService<IExcelService>();
+    var pdfService = provider.GetRequiredService<IPdfService>();
 
     var excelPath = AppContext.GetData("ExcelFilePath") as string ?? "./sample.xlsx";
     var rows = await excelService.ReadExcelAsync(excelPath);
@@ -29,7 +27,7 @@ class Program
     }
 
     Console.WriteLine("\nExcel File Contents:\n");
-    Console.WriteLine($"{ "Name",-25} { "Email",-35} { "Phone Number",-15}");
+    Console.WriteLine($"{"Name",-25} {"Email",-35} {"Phone Number",-15}");
     Console.WriteLine(new string('-', 80));
     foreach (var contact in rows)
     {

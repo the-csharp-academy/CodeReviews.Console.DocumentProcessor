@@ -7,7 +7,7 @@ public class Contact
   public string Email { get; set; } = string.Empty;
   public string PhoneNumber { get; set; } = string.Empty;
 
-  public bool validateEmailAddress(string email)
+  public bool ValidateEmailAddress(string email)
   {
     if (String.IsNullOrEmpty(email))
     {
@@ -21,7 +21,7 @@ public class Contact
       && dotIndex < email.Length - 1;
   }
 
-  public bool validatePhoneNumber(string phoneNumber)
+  public bool ValidatePhoneNumber(string phoneNumber)
   {
     return !String.IsNullOrEmpty(phoneNumber)
       && phoneNumber.Length == 11

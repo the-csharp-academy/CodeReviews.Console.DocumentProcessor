@@ -8,7 +8,7 @@
    ```
 
 2. **Add your Excel file**
-   - Place your Excel file (e.g., `sample.xlsx`) in the project directory (There's a sample currently).
+   - Place your Excel file (e.g., `sample.xlsx`) in the project directory. A sample file (`sample.xlsx`) is already provided for testing.
    - Ensure the worksheet is named `Contacts` and has columns: Name, Email, Phone Number.
 
 3. **Run the program**

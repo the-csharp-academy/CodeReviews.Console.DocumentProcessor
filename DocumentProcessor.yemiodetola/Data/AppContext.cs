@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using DocumentProcessor.yemiodetola.Models;
-public class AppDbContext : DbContext
+public class DocumentProcessorDbContext : DbContext
 {
   public DbSet<Contact> Contacts => Set<Contact>();
 
