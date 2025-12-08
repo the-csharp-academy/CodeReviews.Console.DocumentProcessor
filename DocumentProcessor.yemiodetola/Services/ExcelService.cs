@@ -6,7 +6,6 @@ public class ExcelService : IExcelService
 {
     public async Task<List<Contact>> ReadExcelAsync(string path)
     {
-        // For demo, call ExcelReader synchronously
         return await Task.Run(() => ExcelReader.ListContacts(path, "Contacts"));
     }
 }
