@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../DocumentProcessorTests/kilozdazolik.DocumentProcessorTests.csproj" Id="b38a5f06-3120-4899-99af-12efe6cb05de" />
+  <Project Path="kilozdazolik.DocumentProcessor.csproj" />
+</Solution>
