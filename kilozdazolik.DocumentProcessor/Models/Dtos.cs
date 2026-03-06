@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace kilozdazolik.DocumentProcessor.Models
+﻿namespace kilozdazolik.DocumentProcessor.Models
 {
     public class Dtos
     {
