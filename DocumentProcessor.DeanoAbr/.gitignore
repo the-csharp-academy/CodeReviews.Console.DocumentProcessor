@@ -1,0 +1,11 @@
+# Local SQLite database (created at runtime)
+*.db
+*-shm
+*-wal
+
+# Generated PDF reports
+report-*.pdf
+
+# Build output
+bin/
+obj/
