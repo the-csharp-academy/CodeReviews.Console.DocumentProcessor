@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using silvermax.DocumentProcessor.DbAcess;
 
-
 #nullable disable
 
 namespace silvermax.DocumentProcessor.Migrations
@@ -18,7 +17,7 @@ namespace silvermax.DocumentProcessor.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.9")
+                .HasAnnotation("ProductVersion", "10.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -48,7 +47,7 @@ namespace silvermax.DocumentProcessor.Migrations
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvachar(50)");
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 

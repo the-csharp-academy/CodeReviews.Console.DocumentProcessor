@@ -23,9 +23,8 @@ public class ContactDbContext : DbContext
                 .HasMaxLength(200);
             entity.Property(e => e.Email).HasMaxLength(200);
             entity.Property(e => e.PhoneNumber).IsRequired()
-                .HasColumnType("uniqueidentifier")
                 .HasMaxLength(50)
-                .HasColumnType("nvachar(50)");
+                .HasColumnType("nvarchar(50)");
             entity.Property(e => e.AddedAt).IsRequired()
                 .HasColumnType("datetime2")
                 .HasDefaultValueSql("GETUTCDATE()");
